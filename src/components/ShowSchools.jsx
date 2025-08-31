@@ -12,7 +12,7 @@ const ShowSchools = () => {
 
   const fetchSchools = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/schools');
+      const response = await axios.get('http://localhost:5000/api/schools','https://school-backend-yvi6.onrender.com/api');
       setSchools(response.data);
       setLoading(false);
     } catch (error) {

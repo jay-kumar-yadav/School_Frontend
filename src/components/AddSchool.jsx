@@ -23,7 +23,7 @@ const AddSchool = () => {
     }
     
     try {
-      await axios.post('http://localhost:5000/api/schools', formData, {
+      await axios.post('http://localhost:5000/api/schools','https://school-backend-yvi6.onrender.com/api', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
